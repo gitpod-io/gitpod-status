@@ -10,7 +10,8 @@
     "start": "statusfy start",
     "generate": "statusfy generate",
     "new-incident": "statusfy new-incident",
-    "commit": "./push-to-gcp.sh; git add .; git commit -a -m 'Created new/updated old incident'; git push"
+    "commit": "./push-to-gcp.sh; git add .; git commit -a -m 'Created new/updated old incident'; git push",
+    "push": "./push-to-gcp.sh"
   },
   "dependencies": {
     "statusfy": "^0.2.1"
