@@ -21,20 +21,18 @@ podTemplate(
         checkout scm
 
         container('devenv') {
-            if(env.BRANCH_NAME == "published") {
-                stage("generate") {
-                    sh("yarn install")
-                    sh("yarn generate")
+            stage("generate") {
+                sh("yarn install")
+                sh("yarn generate")
+            }
+            stage("gcloud") {
+                withCredentials([file(credentialsId: 'gitpod-publish-static-web-pages', variable: 'gkey')]) {
+                    sh('gcloud auth activate-service-account --key-file=${gkey}')
                 }
-                stage("gcloud") {
-                    withCredentials([file(credentialsId: 'gitpod-publish-static-web-pages', variable: 'gkey')]) {
-                        sh('gcloud auth activate-service-account --key-file=${gkey}')
-                    }
 
-                    sh("gcloud config set project " + env.GITPOD_GCP_PROJECT)
-                    sh("gsutil -m rsync -d -r ./dist/ gs://status-gitpod-io/")
-                    sh("gsutil -m acl ch -r -u AllUsers:R gs://status-gitpod-io/")
-                }
+                sh("gcloud config set project " + env.GITPOD_GCP_PROJECT)
+                sh("gsutil -m rsync -d -r ./dist/ gs://status-gitpod-io/")
+                sh("gsutil -m acl ch -r -u AllUsers:R gs://status-gitpod-io/")
             }
         }
     }

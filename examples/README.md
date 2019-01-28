@@ -1,5 +1,5 @@
 # CONTENT
 
-This directory contains your Application Incidents.
+This directory contains a few examples that serve as quick reference when updating/adding new incidents.
 
-More information about the usage of this directory in [the documentation](https://docs.statusfy.co).
+More information about files in here can be found in [the documentation](https://docs.statusfy.co).
