@@ -1,0 +1,9 @@
+image:
+  file: Dockerfile
+ports:
+- port: 8080
+tasks:
+- init: yarn install
+  command: >
+    yarn generate;
+    cd dist && npx http-server -p 8080

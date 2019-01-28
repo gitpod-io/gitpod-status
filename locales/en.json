@@ -1,0 +1,21 @@
+{
+    "title": "Gitpod",
+    "description": "Gitpod service status",
+    "systems": {
+        "items": {
+            "dashboard": {
+                "title": "Dashboard"
+            },
+            "workspaces": {
+                "title": "Workspaces",
+                "description": "Running user workspaces"
+            },
+            "imagebuilds": {
+                "title": "Automatic Docker image builds"
+            },
+            "website": {
+                "title": "Gitpod website"
+            }
+        }
+    }
+}

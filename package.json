@@ -1,0 +1,22 @@
+{
+  "name": "gitpod",
+  "description": "Gitpod service status",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "statusfy dev",
+    "build": "statusfy build",
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "commit": "./push-to-gcp.sh; git add .; git commit -a -m 'Created new/updated old incident'; git push"
+  },
+  "dependencies": {
+    "statusfy": "^0.2.1"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=5"
+  }
+}
