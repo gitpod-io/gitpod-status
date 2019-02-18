@@ -7,6 +7,6 @@ severity: under-maintenance
 affectedsystems:
   - workspaces
   - imagebuilds
-resolved: false
+resolved: true
 ---
 We are upgrading our US clusters. This will cause running workspaces to be stopped.
