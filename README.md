@@ -17,7 +17,7 @@ yarn generate
 cd dist && npx http-server -p 8080
 
 # push to Github and let Jenkins update the bucket
-git commit -a -m 'Updated incidents' .
+git commit -a -m 'Updated incidents'
 git push
 ```
 
