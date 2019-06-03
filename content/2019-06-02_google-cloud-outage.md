@@ -6,7 +6,7 @@ affectedsystems:
   - dashboard
   - workspaces
   - imagebuilds
-resolved: false
+resolved: true
 ---
 All systems are currenlty affected by the Google Cloud Outage.
 
