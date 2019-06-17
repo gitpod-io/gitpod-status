@@ -5,7 +5,7 @@ severity: partial-outage
 affectedsystems:
   - dashboard
   - workspaces
-resolved: false
+resolved: true
 ---
 We're updating Gitpod with some backward incompatible changes. This results in a temporary outage of our service.
 
