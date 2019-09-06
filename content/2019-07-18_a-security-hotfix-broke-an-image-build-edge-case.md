@@ -9,3 +9,7 @@ resolved: true
 Starting a workspace on repositories which do not need to rebuild their base image, but haven't been started since 2nd of July, fail during image build.
 
 <!--- language code: en -->
+
+::: update Resolved | 2019-07-18T10:51:00.000Z
+
+:::

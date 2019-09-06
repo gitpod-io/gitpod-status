@@ -10,3 +10,7 @@ Due to an unexpected issue while deploying a fresh version, running workspaces c
 As a workaround, stop running workspaces from the your [dashboard](https://gitpod.io/workspaces) and restart them. Your state will be restored as usual.
 
 <!--- language code: en -->
+
+::: update Resolved | 2019-03-06T17:07:00.000Z
+
+:::

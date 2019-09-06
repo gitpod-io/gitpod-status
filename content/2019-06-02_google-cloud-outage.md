@@ -8,6 +8,10 @@ affectedsystems:
   - imagebuilds
 resolved: true
 ---
-All systems are currenlty affected by the Google Cloud Outage.
+All systems are currently affected by the Google Cloud Outage.
 
 <!--- language code: en -->
+
+::: update Resolved | 2019-06-03T09:30:00.000Z
+
+:::
