@@ -5,7 +5,7 @@ severity: partial-outage
 affectedsystems:
   - dashboard
   - workspaces
-resolved: false
+resolved: true
 ---
 A recent database migration took longer than expected. In the meantime the backend wasn't updated which caused a mismatch between the database and the consuming services. Once the migration finishes service will be back to normal.
 
