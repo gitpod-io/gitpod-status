@@ -9,7 +9,6 @@ podTemplate(
             ttyEnabled: true,
             privileged: false,
             alwaysPullImage: true,
-            workingDir: '/home/jenkins',
             resourceRequestCpu: '100m',
             resourceLimitCpu: '1000m',
             resourceRequestMemory: '100Mi',
