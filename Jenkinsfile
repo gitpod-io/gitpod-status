@@ -17,7 +17,9 @@ podTemplate(
     ]
 ) {
     node('agent') {
-        checkout scm
+        container('devenv') {
+            checkout scm
+        }
 
         container('devenv') {
             stage("generate") {
