@@ -12,6 +12,6 @@ The US region is currently seeing severely degraded service, with many users una
 
 <!--- language code: en -->
 
-::: update Mitigated | 2020-01-16T06:00:00.000Z
+::: update Mitigated | 2020-01-27T17:30:00.000Z
 
 :::
