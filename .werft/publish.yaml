@@ -1,0 +1,43 @@
+pod:
+  volumes:
+  - name: gcp-sa
+    secret:
+      secretName: gcp-sa-publish-static-pages
+  containers:
+  - name: publish-status-page
+    workingDir: /workspace
+    image: node:13-stretch
+    imagePullPolicy: IfNotPresent
+    volumeMounts:
+    - name: gcp-sa
+      mountPath: /mnt/secrets/gcp-sa
+      readOnly: true
+    env:
+    - name: GITPOD_GCP_PROJECT
+      valueFrom:
+        secretKeyRef:
+          name: gcp-sa-publish-static-pages
+          key: projectName
+    command:
+    - bash 
+    - -c
+    - |
+      sleep 1
+      set -Eeuo pipefail
+
+      echo "[generate|PHASE] Generate static page"
+      yarn install
+      yarn generate
+
+      echo "[upload|PHASE] Upload newly generated page"
+      export DEBIAN_FRONTEND=noninteractive
+      apt-get update
+      apt-get install -q -y apt-transport-https ca-certificates gnupg
+      echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+      curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+      apt-get update && apt-get install -q -y google-cloud-sdk
+
+      gcloud auth activate-service-account --key-file=/mnt/secrets/gcp-sa/service-account.json
+      gcloud config set project $GITPOD_GCP_PROJECT
+      gsutil -m rsync -d -r ./dist/ gs://status-gitpod-io/
+      gsutil -m acl ch -r -u AllUsers:R gs://status-gitpod-io/
