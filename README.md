@@ -26,4 +26,4 @@ Yes
 
 ### How do I update an incident?
 Check out the [Statusfy](https://docs.statusfy.co/guide/incidents.html#updates-containers) documentation.
-Don't forget to go through the _generate, preview and push_ sequence as during incident creation.
+Don't forget to go through the _generate, preview and push_ sequence during incident creation.
