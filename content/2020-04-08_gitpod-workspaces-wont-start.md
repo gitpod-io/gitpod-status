@@ -4,7 +4,7 @@ date: '2020-04-08T14:00:00.000Z'
 severity: partial-outage
 affectedsystems:
   - workspaces
-resolved: false
+resolved: true
 ---
 Due to a simultaneous containerd failure in Europe and North America, many Gitpod workspaces could not be started globally.
 
