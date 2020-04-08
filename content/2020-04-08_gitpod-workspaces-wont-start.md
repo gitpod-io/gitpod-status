@@ -6,7 +6,7 @@ affectedsystems:
   - workspaces
 resolved: true
 ---
-Due to a simultaneous containerd failure in Europe and North America, many Gitpod workspaces could not be started globally.
+Due to a simultaneous containerd failure in Europe and North America, many Gitpod workspaces could not be started globally. Google Cloud incident: https://status.cloud.google.com/incident/zall/20005
 
 <!--- language code: en -->
 
