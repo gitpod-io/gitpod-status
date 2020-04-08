@@ -1,10 +1,15 @@
 image:
   file: Dockerfile
+
 ports:
-- port: 8080
+  - port: 3000
+    onOpen: ignore
+  - port: 8080
+    onOpen: open-preview
+
 tasks:
-- init: yarn install
-  command: >
-    rm -Rf dist;
-    yarn generate;
-    (cd dist && npx http-server -p 8080)
+  - init: yarn install
+    command: >
+      rm -Rf dist;
+      yarn generate;
+      (cd dist && npx http-server -p 8080)
