@@ -4,7 +4,7 @@ date: '2020-07-01T11:16:24.139Z'
 severity: partial-outage
 affectedsystems:
   - workspaces
-resolved: false
+resolved: true
 ---
 The cluster in North America was unable to start new workspaces.
 
