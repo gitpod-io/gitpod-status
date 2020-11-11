@@ -5,7 +5,7 @@ severity: degraded-performance
 affectedsystems:
   - workspaces
   - imagebuilds
-resolved: false
+resolved: true
 ---
 Some workspaces are taking a longer time to start up.
 
