@@ -5,10 +5,12 @@ severity: degraded-performance
 affectedsystems:
   - workspaces
   - imagebuilds
-resolved: false
+resolved: true
 ---
 Starting workspaces is very slow.
 
 <!--- language code: en -->
+
+::: Update: Resolved | 2020-12-15T15:40:00.000Z
 
 :::
