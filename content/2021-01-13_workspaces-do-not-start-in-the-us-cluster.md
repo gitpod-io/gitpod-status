@@ -9,4 +9,8 @@ resolved: false
 ---
 We are currently investigating an issue that prevents workspaces from starting in the US cluster.
 
+::: update Update | 2021-01-13T17:12:46.693Z
+We have temporarily disabled the US cluster and all traffic is routed to the EU cluster.
+:::
+
 <!--- language code: en -->
