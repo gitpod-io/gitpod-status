@@ -1,6 +1,6 @@
 pod:
   nodeSelector:
-    gitpod.io/jenkins_agents: true
+    cloud.google.com/gke-nodepool: workload
   volumes:
   - name: gcp-sa
     secret:
