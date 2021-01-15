@@ -5,7 +5,7 @@ severity: partial-outage
 affectedsystems:
   - workspaces
   - imagebuilds
-resolved: false
+resolved: true
 ---
 We are currently investigating an issue that prevents workspaces from starting in the US cluster.
 
@@ -15,6 +15,10 @@ We have temporarily disabled the US cluster and all traffic is routed to the EU 
 
 ::: update Monitoring | 2021-01-14T11:03:46.693Z
 A fix has been implemented and we are monitoring the results.
+:::
+
+::: update Resolved | 2021-01-14T12:03:46.693Z
+This incident has been resolved.
 :::
 
 <!--- language code: en -->
