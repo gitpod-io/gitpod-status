@@ -41,5 +41,5 @@ pod:
 
       gcloud auth activate-service-account --key-file=/mnt/secrets/gcp-sa/service-account.json
       gcloud config set project $GITPOD_GCP_PROJECT
-      gsutil -m rsync -d -r ./dist/ gs://status-gitpod-io/
+      gsutil -m -h "Cache-Control:no-cache, max-age=0" rsync -d -r ./dist/ gs://status-gitpod-io/
       gsutil -m acl ch -r -u AllUsers:R gs://status-gitpod-io/
