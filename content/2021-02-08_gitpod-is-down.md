@@ -6,7 +6,7 @@ affectedsystems:
   - dashboard
   - workspaces
   - imagebuilds
-resolved: false
+resolved: true
 ---
 Gitpod is not reachable in EU at the moment
 
