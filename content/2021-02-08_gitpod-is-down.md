@@ -10,4 +10,6 @@ resolved: false
 ---
 Gitpod is not reachable in EU at the moment
 
+*see also: [GitHub issue](https://github.com/gitpod-io/gitpod/issues/3146) for updates*
+
 <!--- language code: en -->
