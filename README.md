@@ -5,6 +5,8 @@ The status page is generated statically and pushed to a Google bucket where thei
 
 [![Open in Gitpod](http://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/gitpod-io/gitpod-status)
 
+Start a deploy job : https://werft.gitpod-io-dev.com/start
+
 ### How do I create a new incident?
 ```
 # create the incident and fill in your incident details
