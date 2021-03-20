@@ -5,7 +5,7 @@ severity: partial-outage
 affectedsystems:
   - dashboard
   - workspaces
-resolved: false
+resolved: true
 ---
 Some users are unable to log in, others aren't able to start workspaces.
 
