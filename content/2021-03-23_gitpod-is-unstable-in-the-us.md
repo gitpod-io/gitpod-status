@@ -5,8 +5,11 @@ severity: partial-outage
 affectedsystems:
   - dashboard
   - workspaces
-resolved: false
+resolved: true
 ---
 Workspace starts in US cluster is unstable
+
+::: update Resolved | 2021-03-23T15:40:00.000Z
+US cluster is back to operational.
 
 <!--- language code: en -->
