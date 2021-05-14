@@ -1,31 +1,10 @@
-**If you experience an issue with Gitpod, please file an issue [here](https://github.com/gitpod-io/gitpod/issues).**
-
-This repository backs our status page (https://status.gitpod.io).
-The status page is generated statically and pushed to a Google bucket where their CDN serves it.
-
-[![Open in Gitpod](http://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/gitpod-io/gitpod-status)
-
-Start a deploy job : https://werft.gitpod-io-dev.com/start
-
-### How do I create a new incident?
 ```
-# create the incident and fill in your incident details
-yarn new-incident
-
-# regenerate status page
-yarn generate
-
-# make sure everything looks fine
-cd dist && npx http-server -p 8080
-
-# push to Github and let Jenkins update the bucket
-git commit -a -m 'Updated incidents'
-git push
+HTTP/1.1 301 Moved Permanently
+Location: https://www.gitpodstatus.com/
 ```
 
-### Is it ok to push my changes directly to master?
-Yes
+Please visit https://www.gitpodstatus.com/ instead.
 
-### How do I update an incident?
-Check out the [Statusfy](https://docs.statusfy.co/guide/incidents.html#updates-containers) documentation.
-Don't forget to go through the _generate, preview and push_ sequence during incident creation.
+This archived repository contains information about service incidents that occurred prior to the 30th of April 2021.
+
+ 
